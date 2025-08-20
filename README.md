@@ -52,9 +52,14 @@ Providing decision-making insights such as best performers, winning factors, and
 
 # steps:
 
-**1.Load data into PowerBI**
+**1.Load data into PowerBI:**
 Open Power BI - Get Data - Link Folder which contains csv files
 
-**2.Data Transformation**
+**2.Data Transformation:**
 Calendar Table (Date Dimension for Time Intelligence):
 -Dax formula: Calender Table = CALENDAR(MIN('public ipl_matches_2008_2022'[match_date]),MAX('public ipl_matches_2008_2022'[match_date]))
+
+**3.Manage Relationship:**
+created a schema relationship between tables.
+<img width="1010" height="753" alt="image" src="https://github.com/user-attachments/assets/3bd1b83b-7d05-4b94-93af-d7289c92ef22" />
+
