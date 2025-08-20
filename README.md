@@ -52,8 +52,8 @@ return Title_winner
 **5.Create Dashboard**
 <img width="2767" height="1600" alt="IPL_DASHBOARD-1" src="https://github.com/user-attachments/assets/0b62566b-e5c4-4794-8da9-23d56f6228fa" />
 
-**Slicers:**
--IPL Batting Stats
+**Slicers:**\n
+-IPL Batting Stats\n
 -IPL Bowling Stats
 
 **KPIs:**
