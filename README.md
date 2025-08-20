@@ -11,44 +11,9 @@ Allowing quick comparison between players, teams, and seasons.
 Providing decision-making insights such as best performers, winning factors, and performance trends.
 
 # Dataset:
-**Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)(Columns)**
-1. id
-2. innings
-3. overs
-4. ball_number
-5. batter
-6. bowler
-7. non_striker
-8. extra_type
-9. batsman_run
-10. extras_run
-11. total_run
-12. non_boundary
-13. iswicket_delivery
-14. player_out
-15. dismisal_kind
-16. fielders_involved
-17. batting_team
+**Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)**
+**Matches Dataset (ipl_matches_2008_2022.csv)**
 
-**Matches Dataset (ipl_matches_2008_2022.csv)(Columns)**
-1. id
-2. city
-3. match_date
-4. season
-5. match_number
-6. team1
-7. team2
-8. venue
-9. toss_winner
-10. toss_decision
-11. superover
-12. winning_team
-13. won_by
-14. margin
-15. method
-16. player_of_match
-17. umpire1
-18. umpire2
 
 # steps:
 
@@ -63,7 +28,7 @@ Calendar Table (Date Dimension for Time Intelligence):
 created a schema relationship between tables.
 <img width="1010" height="753" alt="image" src="https://github.com/user-attachments/assets/3bd1b83b-7d05-4b94-93af-d7289c92ef22" />
 
-# 4.Create measures
+**4.Create measures**
 Average by bowler = DIVIDE(
                 SUMX(
                     FILTER('public ipl_ball_by_ball_2008_2022','public ipl_ball_by_ball_2008_2022'[extra_type]<>"legbyes" && 'public ipl_ball_by_ball_2008_2022'[extra_type]<>"byes") , 'public ipl_ball_by_ball_2008_2022'[total_run]),SUM('public ipl_ball_by_ball_2008_2022'[iswicket_delivery]))
