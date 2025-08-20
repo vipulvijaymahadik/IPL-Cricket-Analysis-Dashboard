@@ -14,38 +14,38 @@ Providing decision-making insights such as best performers, winning factors, and
 **Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)(Columns)**
 1. id
 2. innings
-overs
-ball_number
-batter
-bowler
-non_striker
-extra_type
-batsman_run
-extras_run
-total_run
-non_boundary
-iswicket_delivery
-player_out
-dismisal_kind
-fielders_involved
-batting_team
+3. overs
+4. ball_number
+5. batter
+6. bowler
+7. non_striker
+8. extra_type
+9. batsman_run
+10. extras_run
+11. total_run
+12. non_boundary
+13. iswicket_delivery
+14. player_out
+15. dismisal_kind
+16. fielders_involved
+17. batting_team
 
 **Matches Dataset (ipl_matches_2008_2022.csv)(Columns)**
-id
-city
-match_date
-season
-match_number
-team1
-team2
-venue
-toss_winner
-toss_decision
-superover
-winning_team
-won_by
-margin
-method
-player_of_match
-umpire1
-umpire2
+1. id
+2. city
+3. match_date
+4. season
+5. match_number
+6. team1
+7. team2
+8. venue
+9. toss_winner
+10. toss_decision
+11. superover
+12. winning_team
+13. won_by
+14. margin
+15. method
+16. player_of_match
+17. umpire1
+18. umpire2
