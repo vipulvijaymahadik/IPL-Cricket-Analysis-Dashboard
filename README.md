@@ -52,3 +52,19 @@ return Title_winner
 **5.Create Dashboard**
 <img width="2767" height="1600" alt="IPL_DASHBOARD-1" src="https://github.com/user-attachments/assets/0b62566b-e5c4-4794-8da9-23d56f6228fa" />
 
+**Slicers**
+IPL Batting Stats
+IPL Bowling Stats
+
+**KPIs:**
+Season Winner
+Orange Cap Holder
+Purple Cap Holder
+Tournaments 6's
+Tournaments 4's
+
+**Visuals**
+Stacked Bar Chart - Matches Win by Venue
+Stacked Bar Chart - Total win in a season by a Team
+Donut Chart - Winning % Based on toss Decision
+Pie Chart- Matches win by result type
