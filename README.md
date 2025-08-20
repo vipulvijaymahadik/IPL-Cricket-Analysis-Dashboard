@@ -49,3 +49,12 @@ Providing decision-making insights such as best performers, winning factors, and
 16. player_of_match
 17. umpire1
 18. umpire2
+
+# steps:
+
+**1.Load data into PowerBI**
+Open Power BI - Get Data - Link Folder which contains csv files
+
+**2.Data Transformation**
+Calendar Table (Date Dimension for Time Intelligence):
+-Dax formula: Calender Table = CALENDAR(MIN('public ipl_matches_2008_2022'[match_date]),MAX('public ipl_matches_2008_2022'[match_date]))
