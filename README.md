@@ -10,6 +10,7 @@ Aggregating IPL data into a structured and interactive Power BI dashboard.
 Allowing quick comparison between players, teams, and seasons.
 Providing decision-making insights such as best performers, winning factors, and performance trends.
 
+# Dataset:
 1.Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)(Columns)
 id
 innings
