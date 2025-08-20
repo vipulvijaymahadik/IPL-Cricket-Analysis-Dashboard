@@ -53,8 +53,8 @@ return Title_winner
 <img width="2767" height="1600" alt="IPL_DASHBOARD-1" src="https://github.com/user-attachments/assets/0b62566b-e5c4-4794-8da9-23d56f6228fa" />
 
 **Slicers:**
-IPL Batting Stats
--IPL Bowling Stats
+1. IPL Batting Stats
+2. IPL Bowling Stats
 
 **KPIs:**
 1. Season Winner
