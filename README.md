@@ -63,3 +63,7 @@ Calendar Table (Date Dimension for Time Intelligence):
 created a schema relationship between tables.
 <img width="1010" height="753" alt="image" src="https://github.com/user-attachments/assets/3bd1b83b-7d05-4b94-93af-d7289c92ef22" />
 
+# 4.Create measures
+Average by bowler = DIVIDE(
+                SUMX(
+                    FILTER('public ipl_ball_by_ball_2008_2022','public ipl_ball_by_ball_2008_2022'[extra_type]<>"legbyes" && 'public ipl_ball_by_ball_2008_2022'[extra_type]<>"byes") , 'public ipl_ball_by_ball_2008_2022'[total_run]),SUM('public ipl_ball_by_ball_2008_2022'[iswicket_delivery]))
