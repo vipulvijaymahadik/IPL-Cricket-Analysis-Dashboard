@@ -9,3 +9,42 @@ This dashboard solves the problem by:
 Aggregating IPL data into a structured and interactive Power BI dashboard.
 Allowing quick comparison between players, teams, and seasons.
 Providing decision-making insights such as best performers, winning factors, and performance trends.
+
+Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)
+id
+innings
+overs
+ball_number
+batter
+bowler
+non_striker
+extra_type
+batsman_run
+extras_run
+total_run
+non_boundary
+iswicket_delivery
+player_out
+dismisal_kind
+fielders_involved
+batting_team
+
+📋 2. Matches Dataset (ipl_matches_2008_2022.csv)
+id
+city
+match_date
+season
+match_number
+team1
+team2
+venue
+toss_winner
+toss_decision
+superover
+winning_team
+won_by
+margin
+method
+player_of_match
+umpire1
+umpire2
