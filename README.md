@@ -12,8 +12,8 @@ Providing decision-making insights such as best performers, winning factors, and
 
 # Dataset:
 **Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)(Columns)**
-id
-innings
+1. id
+2. innings
 overs
 ball_number
 batter
@@ -30,7 +30,7 @@ dismisal_kind
 fielders_involved
 batting_team
 
-**📋 2. Matches Dataset (ipl_matches_2008_2022.csv)(Columns)**
+**Matches Dataset (ipl_matches_2008_2022.csv)(Columns)**
 id
 city
 match_date
