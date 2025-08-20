@@ -28,22 +28,22 @@ created a schema relationship between tables.
 <img width="1010" height="753" alt="image" src="https://github.com/user-attachments/assets/3bd1b83b-7d05-4b94-93af-d7289c92ef22" />
 
 **4.Create measures:**
-1. Average by bowler = DIVIDE(
+1. **Average by bowler** = DIVIDE(
                 SUMX(
                     FILTER('public ipl_ball_by_ball_2008_2022','public ipl_ball_by_ball_2008_2022'[extra_type]<>"legbyes" && 'public ipl_ball_by_ball_2008_2022'[extra_type]<>"byes") , 'public ipl_ball_by_ball_2008_2022'[total_run]),SUM('public ipl_ball_by_ball_2008_2022'[iswicket_delivery]))
 
-2. Batter Runs = CONCATENATE(SUM('public ipl_ball_by_ball_2008_2022'[batsman_run]),"Runs")
+2. **Batter Runs** = CONCATENATE(SUM('public ipl_ball_by_ball_2008_2022'[batsman_run]),"Runs")
 
-3. Bowling SR = COUNT('public ipl_ball_by_ball_2008_2022'[bowler])/SUM('public ipl_ball_by_ball_2008_2022'[iswicket_delivery])
+3. **Bowling SR** = COUNT('public ipl_ball_by_ball_2008_2022'[bowler])/SUM('public ipl_ball_by_ball_2008_2022'[iswicket_delivery])
 
-4. Economy = DIVIDE(
+4. **Economy** = DIVIDE(
                 SUMX(
                     FILTER('public ipl_ball_by_ball_2008_2022','public ipl_ball_by_ball_2008_2022'[extra_type]<>"legbyes" && 'public ipl_ball_by_ball_2008_2022'[extra_type]<>"byes") , 'public ipl_ball_by_ball_2008_2022'[total_run]),(COUNT('public ipl_ball_by_ball_2008_2022'[overs]))/6)
    
-5.Strike Rate for Batsman = (SUM('public ipl_ball_by_ball_2008_2022'[batsman_run])/COUNT('public ipl_ball_by_ball_2008_2022'[ball_number]))*100
+5.**Strike Rate for Batsman** = (SUM('public ipl_ball_by_ball_2008_2022'[batsman_run])/COUNT('public ipl_ball_by_ball_2008_2022'[ball_number]))*100
 
-6.Maatches win on toss decision = CALCULATE(COUNTROWS('public ipl_matches_2008_2022'), 'public ipl_matches_2008_2022'[toss_winner] = 'public ipl_matches_2008_2022'[winning_team])
+6.**Matches win on toss decision** = CALCULATE(COUNTROWS('public ipl_matches_2008_2022'), 'public ipl_matches_2008_2022'[toss_winner] = 'public ipl_matches_2008_2022'[winning_team])
 
-7.Title Winner = VAR max_date = CALCULATE(MAX('Calender Table'[Date]), ALLSELECTED('public ipl_ball_by_ball_2008_2022'), VALUES('public ipl_matches_2008_2022'))
+7.**Title Winner** = VAR max_date = CALCULATE(MAX('Calender Table'[Date]), ALLSELECTED('public ipl_ball_by_ball_2008_2022'), VALUES('public ipl_matches_2008_2022'))
 var Title_winner = CALCULATE(SELECTEDVALUE('public ipl_matches_2008_2022'[winning_team]), 'Calender Table'[Date] = max_date)
 return Title_winner
