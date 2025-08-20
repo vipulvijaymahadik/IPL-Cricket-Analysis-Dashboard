@@ -11,7 +11,7 @@ Allowing quick comparison between players, teams, and seasons.
 Providing decision-making insights such as best performers, winning factors, and performance trends.
 
 # Dataset:
-1.Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)(Columns)
+**Ball-by-Ball Dataset (ipl_ball_by_ball_2008_2022.csv)(Columns)**
 id
 innings
 overs
@@ -30,7 +30,7 @@ dismisal_kind
 fielders_involved
 batting_team
 
-📋 2. Matches Dataset (ipl_matches_2008_2022.csv)(Columns)
+**📋 2. Matches Dataset (ipl_matches_2008_2022.csv)(Columns)**
 id
 city
 match_date
