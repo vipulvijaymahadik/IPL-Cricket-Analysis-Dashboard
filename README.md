@@ -48,3 +48,7 @@ created a schema relationship between tables.
 7.**Title Winner** = VAR max_date = CALCULATE(MAX('Calender Table'[Date]), ALLSELECTED('public ipl_ball_by_ball_2008_2022'), VALUES('public ipl_matches_2008_2022'))
 var Title_winner = CALCULATE(SELECTEDVALUE('public ipl_matches_2008_2022'[winning_team]), 'Calender Table'[Date] = max_date)
 return Title_winner
+
+**5.Create Dashboard**
+<img width="2767" height="1600" alt="IPL_DASHBOARD-1" src="https://github.com/user-attachments/assets/0b62566b-e5c4-4794-8da9-23d56f6228fa" />
+
